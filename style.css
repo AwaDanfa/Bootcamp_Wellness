@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}  
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #FFF;
+  color: black;
+}
+
+
+header {
+  padding: 20px 40px;
+  background: #675a78;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+header h1 {
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+/* Create three equal columns that sits next to each other */
+.container {
+  display: flex; 
+  justify-content: center;
+  align-content: space-between;
+  
+}
+
+.box {
+  color: white;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 15px;
+  height: 400px;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 280px;
+  width: 280px;
+
+}
+
+.box1 {
+  background: #eccc68;
+}
+
+.box2 {
+  background: #ff6348;
+}
+
+.box3 {
+  background: #ff7f50;
+}
+
+/* Button - CAT */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* arrow */
+.button span:after {
+  content: '\02C3';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #144552;
+  color: white;
+  text-align: center;
+}
